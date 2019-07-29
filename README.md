@@ -5,7 +5,7 @@ Please run the below commands in the order mentioned below
 
 <kubectl create -f mongo-db-secret.yaml>
   
-<kubectl create -f mongo-pv.yaml>
+<kubectl create -f mongo-pv.yaml>  # where ever the pod launches cd /mongo/data for the pv 
   
 <kubectl create -f mongo-pvc.yaml>
   
