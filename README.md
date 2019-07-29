@@ -2,9 +2,11 @@
 Please run the below commands in the order mentioned below
 
 #Mongo configurations
-kubectl create -f mongo-db-secret.yaml     
-kubectl create -f mongo-pv.yaml
-kubectl create -f mongo-pvc.yaml
+<kubectl create -f mongo-db-secret.yaml>
+  
+<kubectl create -f mongo-pv.yaml>
+  
+<kubectl create -f mongo-pvc.yaml>
 kubectl create -f mongo-deployment.yaml
 kubectl create -f mongo-test-svc.yaml
 
