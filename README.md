@@ -22,3 +22,7 @@ Please run the below commands in the order mentioned below
   
 <kubectl create -f node-api-svc.yaml>
 
+
+#Curl pod
+kubectl run --generator=run-pod/v1 curl --image=tutum/curl --command -- sleep 500000
+
