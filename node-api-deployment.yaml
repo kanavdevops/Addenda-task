@@ -1,0 +1,22 @@
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  labels:
+    run: node-api
+  name: node-api
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      run: node-api
+  template:
+    metadata:
+      labels:
+        run: node-api
+    spec:
+      containers:
+      - image: developerrohitkhatri/sample-nodejs-api
+        name: node-api
+        envFrom:
+        - configMapRef:
+            name: node-api-config

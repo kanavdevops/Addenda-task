@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: node-api-config
+data:
+  DB_HOST: "mongo-test-svc"
+  DB_PORT: "27017"
+  DB_DATABASE: "admin"
+  DB_USERNAME: "mongo"
+  DB_PASSWORD: "Y4nys7f11"
